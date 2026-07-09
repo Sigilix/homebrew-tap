@@ -5,22 +5,22 @@
 class Sigilix < Formula
   desc "The grounded AI coding agent for the terminal."
   homepage "https://sigilix.ai"
-  version "1.17.9"
+  version "1.17.10"
 
   depends_on "ripgrep"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Sigilix/homebrew-tap/releases/download/v1.17.9/sigilix-darwin-x64.zip"
-      sha256 "9dd4558125412c711efd1fa7a7b22f8da73631b8d764f515d4b3838e9ec2d81f"
+      url "https://github.com/Sigilix/homebrew-tap/releases/download/v1.17.10/sigilix-darwin-x64.zip"
+      sha256 "a639d762c8df9c914ac4faa95e71aaf9b1720f1a21322df785f5953047a63536"
 
       def install
         bin.install "sigilix"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Sigilix/homebrew-tap/releases/download/v1.17.9/sigilix-darwin-arm64.zip"
-      sha256 "4cb6750e56e33c1fb4f9480dbe8d6ddb9fd55dc36d73d5c146f46047a65c4847"
+      url "https://github.com/Sigilix/homebrew-tap/releases/download/v1.17.10/sigilix-darwin-arm64.zip"
+      sha256 "81e433f76008efa568c2dabe47b2d871841a65f5874c44c4194117bcbb47f774"
 
       def install
         bin.install "sigilix"
@@ -30,15 +30,15 @@ class Sigilix < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Sigilix/homebrew-tap/releases/download/v1.17.9/sigilix-linux-x64.tar.gz"
-      sha256 "ff6591fb48a020d4b4f1b82e021ab4993a7323c5b838c57c8b07088bca8ab255"
+      url "https://github.com/Sigilix/homebrew-tap/releases/download/v1.17.10/sigilix-linux-x64.tar.gz"
+      sha256 "d5e4a2128afdb4f7f38af87cc7020c5c7495285a82264404600e466842d4d127"
       def install
         bin.install "sigilix"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/Sigilix/homebrew-tap/releases/download/v1.17.9/sigilix-linux-arm64.tar.gz"
-      sha256 "cc1db82e7311682973dd0f8532ee9da4c0b7cc8ac3e385e7fa57afa5bb5d0acd"
+      url "https://github.com/Sigilix/homebrew-tap/releases/download/v1.17.10/sigilix-linux-arm64.tar.gz"
+      sha256 "044e802b7616a61d5c2ec5de0060ffe841443b74fbee8400b5e7b911ad3ed459"
       def install
         bin.install "sigilix"
       end
